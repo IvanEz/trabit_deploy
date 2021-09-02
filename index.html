@@ -27,6 +27,15 @@
   <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
 
   <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/abstoogler.css">
+
+  <script src="https://example.org/js/jquery.slim.min.js"></script>
+
+  <script src="https://example.org/js/abstoogler.js"></script>
+  <script>$("#show_1").click(function (event) {
+    console.log("click detected");
+    $("#abstract_1").toggleClass("hideabs");
+  });</script>
 
 </head>
 <body>
@@ -257,7 +266,7 @@
         
           
           <tr>
-            <td class="schedule-time">14h30</td>
+            <td class="schedule-time">14h30-14h40</td>
             <td class="schedule-slot">Pitches</b></td>
             <td class="schedule-description">Fetal brain disorders</td>
           </tr>
@@ -266,15 +275,18 @@
       
         
           <tr>
-            <td class="schedule-time">14h40</td>
+            <td class="schedule-time">14h40-15h40</td>
             <td class="schedule-slot">
             
 
-              Dr. Ellen Grant
+              Dr. Ellen Grant (Keynote)
               <span class="speakers-company">Children&#39;s Hospital Boston</span>
             </td>
-            <td class="schedule-description">Keynote lecture</td>
+            
+              <td class="schedule-description">Keynote lecture</td>
+            
           </tr>
+
         
       
         
@@ -290,8 +302,8 @@
         
           
           <tr>
-            <td class="schedule-time">15h55</td>
-            <td class="schedule-slot">Round table discussion with Dr. Ellen Grant (keynote), Maria Deprez (KCL), Gregor Kasprian (MedUniWien), Jana Hutter (KCL)</b></td>
+            <td class="schedule-time">15h55-16h55</td>
+            <td class="schedule-slot">Round table discussion with Ellen Grant (keynote), Maria Deprez (KCL), Gregor Kasprian (MedUniWien), Jana Hutter (KCL)</b></td>
             <td class="schedule-description"></td>
           </tr>
           
@@ -309,15 +321,18 @@
       
         
           <tr>
-            <td class="schedule-time">17h10</td>
+            <td class="schedule-time">17h10-18h00</td>
             <td class="schedule-slot">
             
 
               Speed networking
               <span class="speakers-company"></span>
             </td>
-            <td class="schedule-description">Every 5 minutes you will be assigned to a zoom room with a random conference's participant. This is a fantastic opportunity to engage and exchange information with others in a fun and casual way.</td>
+            
+              <td class="schedule-description">Every 5 minutes you will be assigned to a room with a random conference's participant. This is a fantastic opportunity to engage and exchange information with others in a fun and casual way.</td>
+            
           </tr>
+
         
       
         
@@ -333,7 +348,7 @@
         
           
           <tr>
-            <td class="schedule-time">14h30</td>
+            <td class="schedule-time">14h30-14h40</td>
             <td class="schedule-slot">Pitches</b></td>
             <td class="schedule-description">Brain tumors</td>
           </tr>
@@ -342,15 +357,18 @@
       
         
           <tr>
-            <td class="schedule-time">14h40</td>
+            <td class="schedule-time">14h40-15h40</td>
             <td class="schedule-slot">
             
 
-              Dr. Ron Kikinis
+              Dr. Ron Kikinis (Keynote)
               <span class="speakers-company">Harvard Medical School</span>
             </td>
-            <td class="schedule-description">Navigation for the Rest of the World  </td>
+            
+              <td class="schedule-description">Navigation for the Rest of the World  </td>
+            
           </tr>
+
         
       
         
@@ -366,8 +384,8 @@
         
           
           <tr>
-            <td class="schedule-time">15h55</td>
-            <td class="schedule-slot">Round table discussion with Dr. Ron Kikinis and Dr. Christos Davatzikos</b></td>
+            <td class="schedule-time">15h55-16h55</td>
+            <td class="schedule-slot">Round table discussion with Ron Kikinis (HMS), Christos Davatzikos (UPenn), Josien Pluim (TuE), Chiara Negwer (TUM), Gabriel Girard (CHUV/EPFL), Jan Klein (MEVIS)</b></td>
             <td class="schedule-description"></td>
           </tr>
           
@@ -385,28 +403,34 @@
       
         
           <tr>
-            <td class="schedule-time">17h10</td>
+            <td class="schedule-time">17h10-18h00</td>
             <td class="schedule-slot">
             
 
               Casual networking
               <span class="speakers-company"></span>
             </td>
-            <td class="schedule-description">The perfect chance to mingle with other conference's participants in common zoom rooms.</td>
+            
+              <td class="schedule-description">The perfect chance to mingle with other conference's participants in common rooms.</td>
+            
           </tr>
+
         
       
         
           <tr>
-            <td class="schedule-time">18h00</td>
+            <td class="schedule-time">18h00-19h00</td>
             <td class="schedule-slot">
             
 
-              Dr. Christos Davatzikos
+              Dr. Christos Davatzikos (Keynote)
               <span class="speakers-company">University of Pennsylvania</span>
             </td>
-            <td class="schedule-description">Radiomics and radiogenomics of glioblastoma</td>
+            
+              <td class="schedule-description">Radiomics and radiogenomics of glioblastoma</td>
+            
           </tr>
+
         
       
         
@@ -422,7 +446,7 @@
         
           
           <tr>
-            <td class="schedule-time">14h30</td>
+            <td class="schedule-time">14h30-14h40</td>
             <td class="schedule-slot">Pitches</b></td>
             <td class="schedule-description">Multiple sclerosis</td>
           </tr>
@@ -431,15 +455,20 @@
       
         
           <tr>
-            <td class="schedule-time">14h40</td>
+            <td class="schedule-time">14h40-15h40</td>
             <td class="schedule-slot">
             
 
-              Dr. Daniel Reich
+              Dr. Daniel Reich (Keynote)
               <span class="speakers-company">National Institutes of Health</span>
             </td>
-            <td class="schedule-description">Beyond the McDonald Criteria: Which Advanced Multiple Sclerosis Imaging Markers Should Make It to the Neuroradiologist’s Workstation?</td>
+            
+              <td class="schedule-description"><span id="show_1">Beyond the McDonald Criteria: Which Advanced Multiple Sclerosis Imaging Markers Should Make It to Your Clinic?</span>
+                <span id="abstract_1">haiaia</span>
+              </td>
+            
           </tr>
+
         
       
         
@@ -455,18 +484,8 @@
         
           
           <tr>
-            <td class="schedule-time">15h55</td>
-            <td class="schedule-slot">Round table discussion with Dr. Daniel Reich (keynote), Tobias Kober (Siemens Healthineers), Diana Sima (icometrix), Meritxell Bach (UNIL)</b></td>
-            <td class="schedule-description"></td>
-          </tr>
-          
-        
-      
-        
-          
-          <tr>
-            <td class="schedule-time">16h55</td>
-            <td class="schedule-slot">Break</b></td>
+            <td class="schedule-time">15h55-16h55</td>
+            <td class="schedule-slot">Round table discussion with Daniel Reich (keynote), Tobias Kober (Siemens Healthineers), Diana Sima (icometrix), Meritxell Bach (UNIL)</b></td>
             <td class="schedule-description"></td>
           </tr>
           
@@ -485,7 +504,7 @@
         
           
           <tr>
-            <td class="schedule-time">09h00</td>
+            <td class="schedule-time">09h00-09h20</td>
             <td class="schedule-slot">Pitches</b></td>
             <td class="schedule-description">Neurovascular disease</td>
           </tr>
@@ -494,15 +513,18 @@
       
         
           <tr>
-            <td class="schedule-time">09h20</td>
+            <td class="schedule-time">09h20-10h20</td>
             <td class="schedule-slot">
             
 
-              Dr. Jan Kirschke
+              Dr. Jan Kirschke (Keynote)
               <span class="speakers-company">Technical University of Munich</span>
             </td>
-            <td class="schedule-description">Clinical Needs in Stroke Imaging</td>
+            
+              <td class="schedule-description">Clinical Needs in Stroke Imaging</td>
+            
           </tr>
+
         
       
         
@@ -518,8 +540,8 @@
         
           
           <tr>
-            <td class="schedule-time">10h35</td>
-            <td class="schedule-slot">Round table discussion with Dr. Jan Kirschke (keynote speaker), David Robben (icometrix), Eric Achten (Ghent University Hospital), and Mauricio Reyes (University of Bern).</b></td>
+            <td class="schedule-time">10h35-11h35</td>
+            <td class="schedule-slot">Round table discussion with Jan Kirschke (keynote speaker), David Robben (icometrix), Eric Achten (Ghent University Hospital), and Mauricio Reyes (University of Bern)</b></td>
             <td class="schedule-description"></td>
           </tr>
           
@@ -537,15 +559,18 @@
       
         
           <tr>
-            <td class="schedule-time">12h00</td>
+            <td class="schedule-time">12h00-13h00</td>
             <td class="schedule-slot">
             
 
               Stories of failures
               <span class="speakers-company"></span>
             </td>
-            <td class="schedule-description">Failure is an essential and inevitable part of scientific research and so it is learning to handle it. Let's share our own professional failures and learn from each other's. Feel free to step forward and tell your own experience!</td>
+            
+              <td class="schedule-description">Failure is an essential and inevitable part of scientific research and so it is learning to handle it. Let's share our own professional failures and learn from each other's. Feel free to step forward and tell your own experience!</td>
+            
           </tr>
+
         
       
     </tbody>

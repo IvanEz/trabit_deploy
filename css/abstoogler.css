@@ -1,4 +1,7 @@
 .hideabs {
     display: none !important;
-//visibility: hidden;
+}
+
+.abstract {
+    font-size: 1em !important;
 }
